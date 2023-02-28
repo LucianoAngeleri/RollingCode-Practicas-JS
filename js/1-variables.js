@@ -22,4 +22,8 @@ console.log(`${usuarioNombre} es alumno del año ${anio}`);
 document.write(`<h1>Hola Mundo!!</h1>`);
 document.write(`${usuarioNombre} es alumno del año ${anio}`);
 //Mostar un mensaje en una ventana emergente
-alert('Este es un mensaje de alerta!!')
+alert('Este es un mensaje de alerta!!');
+
+//Cambiar el valor de una variable
+usuarioNombre = 'Mauricio Soria';
+document.write(`<br>${usuarioNombre} también es alumno del año ${anio}`);
