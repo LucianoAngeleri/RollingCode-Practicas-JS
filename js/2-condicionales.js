@@ -13,10 +13,18 @@ let edad = parseInt(prompt("Ingrese su edad: "));
 console.log(edad);
 console.log(typeof(edad));
 
-if ((edad >= 16 && edad < 18) || edad >= 71){
-    document.write(`El usuario tiene ${edad} años, es OPTATIVO votar` );
-}else if(edad >= 18 && edad < 71){
-    document.write(`El usuario tiene ${edad} años, entonces ES OBLIGATORIO votar`);
+if(isNaN(edad)){
+    if(edad > 0 && edad <= 130){
+        if ((edad >= 16 && edad < 18) || edad >= 71){
+            document.write(`El usuario tiene ${edad} años, es OPTATIVO votar` );
+        }else if(edad >= 18 && edad < 71){
+            document.write(`El usuario tiene ${edad} años, entonces ES OBLIGATORIO votar`);
+        }else{
+            document.write(`El usuario tiene ${edad} años, entonces NO PUEDE votar`);
+        }
+    }else{
+        document.write(`Ingresó una edad inválida`);
+    }    
 }else{
-    document.write(`El usuario tiene ${edad} años, entonces NO PUEDE votar`);
+    document.write(`No ingresó un número`);
 }
