@@ -29,6 +29,8 @@ const dia = prompt("Seleccione un día de la semana: 1-Lunes, 2-Miercoles, 3-Vie
 
 switch (dia){
   case "1":
+  case "lunes":
+  case "Lunes":
     document.write(`
         <h1>Lunes</h1>
         <h2>Menú</h2>
@@ -39,6 +41,10 @@ switch (dia){
         </ul>`);
     break;
   case "2":
+  case "miercoles":
+  case "Miercoles":
+  case "Miércoles":
+  case "miércoles":
     document.write(`
         <h1>Miercoles</h1>
         <h2>Menú</h2>
@@ -49,6 +55,8 @@ switch (dia){
         </ul>`);
     break;
   case "3":
+  case "viernes":
+  case "Viernes":
     document.write(`
         <h1>Viernes</h1>
         <h2>Menú</h2>
