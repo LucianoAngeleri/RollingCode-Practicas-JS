@@ -8,8 +8,9 @@ Nota: Tener en cuenta la función length y substring o charAt (developer mozilla
 // String.charAt(indice) obtiene un caracter del string en la posicion del indice indicado
 // substring(desde,hasta) obtiene un rango de caracteres
 
-const frase = prompt("Ingrese una frase de hasta 4 caracteres");
+let frase = prompt("Ingrese una frase de hasta 4 caracteres");
 console.log(frase.length);
+frase = frase.toLocaleLowerCase();
 
 if(frase.length < 5){
     if(frase.charAt(0) === "a" || frase.charAt(0) === "e" || frase.charAt(0) === "i" || frase.charAt(0) === "o" || frase.charAt(0) === "u"){
