@@ -11,7 +11,7 @@ document.write(`<table><tbody>`)
 for (let filas = 1; filas <= cantFilas; filas++) {
   document.write(`<tr>`)
  for (let columnas = 1; columnas <= cantColumnas; columnas++) {
-  document.write(`<td>${columnas}</td>`)
+  document.write(`<td>${(cantFilas)*(cantColumnas)}</td>`)
  }
  document.write(`</tr>`)
 }
