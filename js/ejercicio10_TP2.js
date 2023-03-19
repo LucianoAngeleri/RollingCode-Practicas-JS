@@ -6,12 +6,13 @@ Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
 */
 const cantFilas = parseInt(prompt("Ingrese la cantidad de Filas"))
 const cantColumnas =parseInt(prompt("Ingrese la cantidad de Columnas"))
+let totalCeldas = cantFilas * cantColumnas
 document.write(`<table><tbody>`)
-
 for (let filas = 1; filas <= cantFilas; filas++) {
   document.write(`<tr>`)
  for (let columnas = 1; columnas <= cantColumnas; columnas++) {
-  document.write(`<td>${(cantFilas)*(cantColumnas)}</td>`)
+  document.write(`<td>${totalCeldas}</td>`)
+  totalCeldas--;
  }
  document.write(`</tr>`)
 }
