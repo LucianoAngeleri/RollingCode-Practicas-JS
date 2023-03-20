@@ -62,3 +62,40 @@ for (let i = 0; i < peliculas.length; i++) {
   document.write(`<li>${peliculas[i]}</li>`);
 }
 document.write("</ul>");
+// Borrar 2 elementos del arreglo
+peliculas.splice(5,2)
+document.write("<h2>Borrar los elementos del arreglo desde la posicion 5 a la 6</h2>");
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+// Borrar el primer elemento del arreglo
+peliculas.shift()
+document.write("<h2>Borrar los elementos del arreglo desde la posicion 5 a la 6</h2>");
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+// Operaciones especiales con arrays
+peliculas.sort() // Ordena los elemento segun la tabla UNICODE
+document.write("<h2>Ordenar los elementos con sort()</h2>");
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+// Metodo include, para saber si existe un elemento dentro del array
+document.write("<h2>Existe la Pelicula 'Mario Bros'? con incudes()</h2>");
+document.write(`<p>${peliculas.includes('Mario Bros')}</p>`); 
+//Operador ternario
+/* if(condicion){
+    codigo  
+    }else{
+        otro codigo
+    }
+    Op ternario (condicion lógica) ? true : false;
+*/ 
+let existePeli = peliculas.includes('Mario Bros') ? "SI se encontró la pelicula":"NO se econtró la película";
+document.write(`<p>${existePeli}</p>`)
