@@ -12,11 +12,14 @@ function saludarPersonaje(nombre, apellido, alias){
 //     return nuevoNombre;
 // }
 // Funciones expresivas o anónimas
-const nombreCompleto = function(nombre, apellido){
-    return nombre +', '+ apellido;
-}
+// const nombreCompleto = function(nombre, apellido){
+//     return nombre +', '+ apellido;
+// }
 
 // Funciones flecha o arrow functions
+
+const nombreCompleto = (nombre, apellido) => nombre +', '+ apellido;
+
 //Llamar una función o invocar una función
 saludar();
 console.log("prueba")
