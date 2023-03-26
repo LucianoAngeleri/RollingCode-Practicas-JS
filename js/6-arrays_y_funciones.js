@@ -35,3 +35,12 @@ const mostrarProductos = (titulo = 'No hay titulo disponible', arreglo) =>{
     document.write("</ul>");
   }
 mostrarProductos("Lista de Productos", productos)
+//Filtrar los protectores solares
+let listaProtectoresSolares = productos.filter(producto => producto.includes("Protector"))
+console.log(listaProtectoresSolares)
+mostrarProductos("Lista de Protectores Solares", listaProtectoresSolares)
+//Buscar un serum "find"
+let serum = productos.find( producto => producto.includes("Sérum"))
+let otroProducto = productos.find( producto => producto.includes("Bálsamo"))
+document.write(`<p>Producto buscado: ${serum}</p>`)
+document.write(`<p>Producto buscado: ${otroProducto === undefined ? "No econtramos el producto buscado" : otroProducto}</p>`)
